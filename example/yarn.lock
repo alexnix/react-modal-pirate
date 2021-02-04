@@ -1608,6 +1608,20 @@
   version "0.0.0"
   uid ""
 
+"@types/react-highlight.js@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-highlight.js/-/react-highlight.js-1.0.0.tgz#d5e0645ee042d4f44a730f3726e997158ea39a7c"
+  integrity sha512-5VXEuo2O9L66y/2GDQSGFTggQkpOvDc/p2ma1KHadu7o/H720HK3Fr83epd4wtQky7B/RoCPat0SKyhlhiUo7A==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-modal@^3.10.6":
+  version "3.10.6"
+  resolved "https://registry.yarnpkg.com/@types/react-modal/-/react-modal-3.10.6.tgz#76717220f32bc72769190692147814a540053c7e"
+  integrity sha512-XpshhwVYir1TRZ2HS5EfmNotJjB8UEC2IkT3omNtiQzROOXSzVLz5xsjwEpACP8U+PctkpfZepX+WT5oDf0a9g==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.1.tgz#eb1f1407dea8da3bc741879c1192aa703ab9975b"
@@ -4345,6 +4359,11 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exenv@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+  integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
+
 exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
@@ -5083,6 +5102,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+highlight.js@^9.3.0:
+  version "9.18.5"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
 
 hmac-drbg@^1.0.1:
   version "1.0.1"
@@ -8485,7 +8509,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8690,6 +8714,14 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-highlight.js@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-highlight.js/-/react-highlight.js-1.0.7.tgz#eb88356f415ac4d3590c20a9b52c1dc7f51a4861"
+  integrity sha512-OVPKnV0ZvU+V//HExwbV8M9CWy49Eo/9y9pBN2OsNWUFPN6dE4YZBLmJW/5sM2DxI5v/QQLyxOnTnSSfGCP+9Q==
+  dependencies:
+    highlight.js "^9.3.0"
+    prop-types "^15.6.0"
+
 react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -8700,9 +8732,24 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-lifecycles-compat@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
 "react-modal-x@link:..":
   version "0.0.0"
   uid ""
+
+react-modal@^3.12.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.12.1.tgz#38c33f70d81c33d02ff1ed115530443a3dc2afd3"
+  integrity sha512-WGuXn7Fq31PbFJwtWmOk+jFtGC7E9tJVbFX0lts8ZoS5EPi9+WWylUJWLKKVm3H4GlQ7ZxY7R6tLlbSIBQ5oZA==
+  dependencies:
+    exenv "^1.2.0"
+    prop-types "^15.5.10"
+    react-lifecycles-compat "^3.0.0"
+    warning "^4.0.3"
 
 "react-scripts@link:../node_modules/react-scripts":
   version "0.0.0"
@@ -10427,6 +10474,13 @@ walker@^1.0.7, walker@~1.0.5:
   integrity sha1-L3+bj9ENZ3JisYqITijRlhjgKPs=
   dependencies:
     makeerror "1.0.x"
+
+warning@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"

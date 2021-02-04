@@ -7,23 +7,65 @@
 ## Install
 
 ```bash
+yarn add react-modal-x
+```
+
+or
+
+```bash
 npm install --save react-modal-x
 ```
 
 ## Usage
 
+1. Wrap your application with <ModalProvider>
 ```tsx
-import React, { Component } from 'react'
+import ModalProvider from "react-modal-x"
 
-import MyComponent from 'react-modal-x'
-import 'react-modal-x/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <ModalProvider>
+      <Main/>
+    </ModalProvider>
+  )
 }
 ```
+
+2. Create the modal content
+
+```tsx
+import {useClose} from "react-modal-x"
+
+const Modal = () => {
+  const closeModal = useClose();
+
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <button onClick={closeModal}>Exit</button>
+    </div>
+  )
+}
+```
+
+**Note:** Modals also close by pressing the Esc key or by clicking outside the modal itself, so it is not mandatory to use the useClose hook.
+
+3. Open the modal using useOpen hook
+
+```tsx
+import { useOpen } from "react-modal-x"
+import Modal from "./Modal"
+
+const Main = () => {
+  const openModal = useOpen()
+
+  return (
+    <button onClick={() => openModal(<Modal/>)}>Open Modal</button>
+  )
+}
+```
+
+## See the [full documentation](https://alexnix.github.io/react-modal-x)
 
 ## License
 
