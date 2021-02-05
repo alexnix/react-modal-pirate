@@ -1,5 +1,5 @@
 import React from 'react'
-import { useOpen } from 'react-modal-x'
+import { useOpen } from 'react-modal-pirate'
 import Modal1 from './Modal1'
 
 interface Modal2Props {}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useOpen } from 'react-modal-x'
+import { useOpen } from 'react-modal-pirate'
 import Modal2 from './Modal2'
 import Highlight from 'react-highlight.js'
 
@@ -11,7 +11,7 @@ const MultipleModalsDemo: React.FC<MultipleModalsDemoProps> = () => {
   return (
     <div>
       <Highlight language='jsx'>
-        {`import ModalProvider, { useOpen } from 'react-modal-x'
+        {`import ModalProvider, { useOpen } from 'react-modal-pirate'
 
 const Modal = () => {
   const openModal = useOpen()

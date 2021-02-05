@@ -1,26 +1,32 @@
-# react-modal-x
+# react-modal-pirate
 
 > A react-modal wrapper that makes it (even) easier to create a modal.
 
-[![NPM](https://img.shields.io/npm/v/react-modal-x.svg)](https://www.npmjs.com/package/react-modal-x) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-modal-pirate.svg)](https://www.npmjs.com/package/react-modal-pirate) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+### Why "-pirate" ?
+
+Because its just like react-modal, but with hooks.
+
+![badabumtss](https://media.giphy.com/media/3o7WIMPobHmxGPnYre/giphy.gif)
 
 ## Install
 
 ```bash
-yarn add react-modal-x
+yarn add react-modal-pirate
 ```
 
 or
 
 ```bash
-npm install --save react-modal-x
+npm install --save react-modal-pirate
 ```
 
 ## Usage
 
 1. Wrap your application with <ModalProvider>
 ```tsx
-import ModalProvider from "react-modal-x"
+import ModalProvider from "react-modal-pirate"
 
 const App = () => {
   return (
@@ -34,7 +40,7 @@ const App = () => {
 2. Create the modal content
 
 ```tsx
-import {useClose} from "react-modal-x"
+import {useClose} from "react-modal-pirate"
 
 const Modal = () => {
   const closeModal = useClose();
@@ -53,7 +59,7 @@ const Modal = () => {
 3. Open the modal using useOpen hook
 
 ```tsx
-import { useOpen } from "react-modal-x"
+import { useOpen } from "react-modal-pirate"
 import Modal from "./Modal"
 
 const Main = () => {
@@ -65,7 +71,7 @@ const Main = () => {
 }
 ```
 
-## See the [full documentation](https://alexnix.github.io/react-modal-x)
+## See the [full documentation](https://alexnix.github.io/react-modal-pirate)
 
 ## License
 

@@ -1,5 +1,5 @@
 {
-  "name": "react-modal-x-example",
+  "name": "react-modal-pirate-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -21,7 +21,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-highlight.js": "^1.0.7",
-    "react-modal-x": "link:..",
+    "react-modal-pirate": "link:..",
     "react-scripts": "link:../node_modules/react-scripts",
     "typescript": "link:../node_modules/typescript"
   },

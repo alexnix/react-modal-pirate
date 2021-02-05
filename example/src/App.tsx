@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ModalProvider from 'react-modal-x'
+import ModalProvider from 'react-modal-pirate'
 import BasicDemo from './BasicDemo'
 import InlineStyleDemo from './InlineStyleDemo'
 import StyledDemo from './StyledDemo'
@@ -55,17 +55,17 @@ const App = () => {
       }}
     >
       <div className='p-30'>
-        <h1>react-modal-x</h1>
+        <h1>react-modal-pirate</h1>
         <p>This library makes it (even) easier to crate modals in React, using <a href="https://www.npmjs.com/package/react-modal" target="_new">react-modal</a> under the hood.</p>
         <p>
           The core idea is that there is no need to have more then one{' '}
-          <i>{'<Modal>'}</i> tag in any application*. Therefore, react-modal-x
+          <i>{'<Modal>'}</i> tag in any application*. Therefore, react-modal-pirate
           abstracts away the <i>{'<Modal>'}</i> tag and offers easy to use React
           hooks to open and close modals.
         </p>
         <p>
           Similarly, there is no need to write the modal CSS style more than
-          once, therefore react-modal-x gives a way to define the style sets in its
+          once, therefore react-modal-pirate gives a way to define the style sets in its
           root tag. When opening a modal the style set can be specified by its name.
           There is also the option to have inline styles for each modal, though
           this should be a very rare case and is not probably not a good choice
@@ -73,13 +73,13 @@ const App = () => {
         </p>
         <p>
           * in the rare cases when nested modals are needed, this means multiple{' '}
-          <i>{'<Modal>'}</i> tags will be needed. react-modal-x has can create
+          <i>{'<Modal>'}</i> tags will be needed. react-modal-pirate has can create
           more then one <i>{'<Modal>'}</i> tag by specifying a proper setting when opening the modal, namely the <i>openInNew</i> option.
         </p>
         <h2>Installation</h2>
-        <h3>yarn add react-modal-x</h3>
+        <h3>yarn add react-modal-pirate</h3>
         or
-        <h3>npm install --save react-modal-x</h3>
+        <h3>npm install --save react-modal-pirate</h3>
       </div>
       <div className='flex-row'>
         <div className='p-30'>

@@ -1,10 +1,10 @@
 {
-  "name": "react-modal-x",
+  "name": "react-modal-pirate",
   "version": "1.0.0",
   "description": "A react-modal wrapper that makes it (even) easier to create a modal.",
   "author": "alexnix",
   "license": "MIT",
-  "repository": "alexnix/react-modal-x",
+  "repository": "alexnix/react-modal-pirate",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
